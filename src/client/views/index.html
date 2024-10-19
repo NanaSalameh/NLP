@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News NLP Project</title>
+    <link href="https://fonts.googleapis.com/css2?&family=Roboto:wght@300;500;700&family=Roboto+Slab:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1aac26dbd0.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header>
+        <h1>News Article Evaluator</h1>
+    </header>
+    <main>
+        <form id="newsForm">
+            <input type="url" id="urlInput" placeholder="Enter article URL" required />
+            <button type="submit">Analyze</button>
+            <div id="result"></div>
+        </form>
+    </main>
+    <footer>
+        <nav class="fnav">
+            <ul>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        <p>&copy; 2024 News NLP Project</p>
+    </footer>
+    <script>
+       
+        if ('serviceWorker' in navigator) {
+           
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>
